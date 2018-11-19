@@ -1,1 +1,1 @@
-export {Brief} from './brief';
+export {Brief as default} from './brief';

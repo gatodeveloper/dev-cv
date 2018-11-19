@@ -1,8 +1,13 @@
 $page-width: 21cm;
 $page-height: 29.7cm;
 
+:root {
+  --page-width: $page-width;
+  --page-height: $page-height;
+}
+
 @page {
-  size: $page-width $page-height;
+  width: $page-width;
 }
 
 html {
@@ -11,11 +16,8 @@ html {
 
 body {
   font-family: Niramit, Arial, Helvetica, sans-serif;
-  background-color: white;
+  margin: 5px auto;
   width: $page-width;
-  height: $page-height;
-  margin-right: auto;
-  margin-left: auto;
   font-size: 12pt;
   -webkit-print-color-adjust: exact;
   line-height: 145%;

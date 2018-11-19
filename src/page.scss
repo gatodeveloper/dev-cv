@@ -1,0 +1,11 @@
+.page {
+  background-color: white;
+  max-width: var(--page-width);
+  height: var(--page-height);
+  display: grid;
+  grid-template-columns: auto 1fr;
+
+  margin-bottom: 10px;
+  padding: 5px;
+  page-break-after: avoid;
+}

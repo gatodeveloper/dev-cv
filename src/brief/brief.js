@@ -13,11 +13,9 @@ export class Brief extends React.Component {
 
     render() {
         const {
-            value: {
-                person,
-                links,
-                knowledge,
-            },
+            person,
+            links,
+            knowledge,
             className
         } = this.props;
 

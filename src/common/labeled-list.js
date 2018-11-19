@@ -1,7 +1,8 @@
 import React from 'react';
-import {List} from "./list";
+import List from "./list";
+import Label from './label';
 
-export class LabeledList extends React.Component {
+export default class LabeledList extends React.Component {
 
     static defaultProps = {
         className: 'labeled-list',
@@ -21,9 +22,10 @@ export class LabeledList extends React.Component {
 
         return (
             <div className={className}>
-                <div className={labelClassName}>
-                    {label}
-                </div>
+                {
+                    typeof label !== 'undefined' &&
+                    <Label content={label} className={labelClassName}/>
+                }
                 <List {...listProps}
                       className={listClassName}
                 />

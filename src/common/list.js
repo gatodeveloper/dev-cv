@@ -1,6 +1,6 @@
 import React from 'react';
 
-export class List extends React.Component {
+export default class List extends React.Component {
 
     static defaultProps = {
         className: 'item-container',

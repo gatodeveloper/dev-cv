@@ -7,19 +7,17 @@ export class Education extends React.Component {
 
     static defaultProps = {
         className: 'education',
-        itemContainerClassName: 'item-container',
+        itemContainerClassName: 'item-container'
     };
 
     render() {
 
         const {
-            value: {
-                label='Education',
-                items,
-                ...itemProps
-            },
+            items,
+            label,
             className,
-            mainLabelClassName
+            mainLabelClassName,
+            ...itemProps
         } = this.props;
 
         return (

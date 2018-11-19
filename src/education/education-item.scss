@@ -1,8 +1,8 @@
 .education-item {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr auto;
   grid-template-columns: max-content max-content max-content max-content;
-  grid-template-areas: "degree degree degree institution" "gpa classof nope nope";
+  grid-template-areas: "degree degree degree institution" "gpa classof nope nope" "tech tech tech tech";
   grid-gap: 3px 0;
 
   .degree {
@@ -25,5 +25,9 @@
     margin-left: 5px;
     grid-area: classof;
     font-size: 0.9em;
+  }
+
+  .tech-stack {
+    grid-area: tech;
   }
 }

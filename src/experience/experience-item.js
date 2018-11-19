@@ -1,6 +1,6 @@
 import React from "react";
 import './experience-item.scss';
-import {Paragraphs, TechStack} from "DetailsCommon";
+import {Paragraphs, TechStack} from "Common";
 
 export class ExperienceItem extends React.Component {
 

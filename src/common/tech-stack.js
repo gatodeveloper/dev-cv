@@ -1,7 +1,9 @@
 import React from 'react';
 import './tech-stack.scss';
+import Label from './label';
 
-export class TechStack extends React.Component {
+//TODO use labeled list instead of re-implementing
+export default class TechStack extends React.Component {
 
     static defaultProps = {
         className: "tech-stack",
@@ -22,7 +24,7 @@ export class TechStack extends React.Component {
 
         return (
             <div className={className}>
-                <div className={labelClassName}>{labelText}</div>
+                <Label className={labelClassName} content={labelText}/>
                 <ul className={itemContainerClassName}>
                     {value.map(this.renderItem)}
                 </ul>

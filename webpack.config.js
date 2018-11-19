@@ -14,8 +14,7 @@ module.exports = {
     resolve: {
         extensions: ['.js', '.jsx', '.json'],
         alias: {
-            Common: path.resolve(__dirname, 'src/common/'),
-            DetailsCommon: path.resolve(__dirname, 'src/details/common')
+            Common: path.resolve(__dirname, 'src/common/')
         }
     },
     module: {
@@ -89,7 +88,8 @@ module.exports = {
         stats: 'errors-only',
         historyApiFallback: true,
         openPage: '',
-        contentBase: path.join(__dirname, 'public')
+        contentBase: path.join(__dirname, 'public'),
+        watchContentBase: true
     },
     devtool: 'source-map'
 };

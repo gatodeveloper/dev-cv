@@ -1,13 +1,10 @@
 import React, {Component} from 'react';
-import './app.scss';
 
-import {Brief} from "./brief";
-import {Details} from "./details";
+import Page from './page';
 
 class App extends Component {
 
     static defaultProps = {
-        className: 'cv',
         errorClassName: 'cv-load-error',
         loadingClassName: 'cv-loading',
         loadingContent: 'Loading ...'
@@ -60,15 +57,15 @@ class App extends Component {
         }
 
         const {
-            brief,
-            details
+            pages = []
         } = value;
 
+        return pages.map(this.renderPage);
+    }
+
+    renderPage = (value, index) => {
         return (
-            <div className={className}>
-                <Brief value={brief}/>
-                <Details value={details}/>
-            </div>
+            <Page value={value} key={index}/>
         );
     }
 }
