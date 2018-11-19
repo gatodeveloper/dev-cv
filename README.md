@@ -6,6 +6,7 @@ A *Print Friendly* CV web app, which you can easily set up, modify and export to
 ## Tech Stack
 - React
 - SCSS
+- JSON
 
 ## How to Use
 0) install Node.js, and run the 'npm install' command in the project root folder.
