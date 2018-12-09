@@ -28,10 +28,9 @@ Then- make sure to omit the label key from the objects which reside on pages oth
 ## Output Example
 [Click Here](https://github.com/EyalPerry/dev-cv/blob/master/output-example.pdf)
 
-## Native App (WIP)
+## Cross Platform Native App (WIP)
 Status: Design
 
 ### Features
 0) Operate Multiple cv.json Files.
-1) UI for Editing
-2) CSS in JS style control over layout
+1) UI for Editing content and S/CSS
