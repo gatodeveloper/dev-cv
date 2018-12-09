@@ -109,11 +109,11 @@
           "label": "Experience",
           "items": [
             {
-              "title": "Software Engineer",
+              "title": "Frontend Engineer",
               "company": "Wix",
               "startDate": "December 2018",
               "description": [
-                "Developing and Testing components used by Wix.com features."
+                "Developing and Testing Wix.com core features."
               ],
               "techStack": [
                 "Javascript",
