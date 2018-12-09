@@ -1,13 +1,14 @@
 .education-item {
   display: grid;
-  grid-template-rows: auto auto auto 1fr;
-  grid-template-columns: max-content max-content;
+  grid-template-rows: auto auto auto auto 1fr;
+  grid-template-columns: auto 1fr;
   grid-template-areas: "degree institution"
-                       "classof gpa"
+                       "classof classof"
+                       "gpa gpa"
                        "tech tech"
                        "proj proj";
 
-  grid-gap: 3px 0;
+  grid-gap: 3px 5px;
 
   padding-bottom: 10px;
   .degree {
