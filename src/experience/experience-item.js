@@ -9,6 +9,7 @@ export class ExperienceItem extends React.Component {
         titleClassName: 'title',
         durationClassName: 'duration',
         companyClassName: 'company',
+        descriptionClassName:'description'
     };
 
     static getKey = ({title, company, startDate}) => {
@@ -32,7 +33,8 @@ export class ExperienceItem extends React.Component {
             className,
             titleClassName,
             durationClassName,
-            companyClassName
+            companyClassName,
+            descriptionClassName
         } = this.props;
 
         const duration = `${startDate} ${dateDelimiter} ${typeof endDate !== 'undefined' ? endDate : ongoingText}`;
@@ -42,7 +44,7 @@ export class ExperienceItem extends React.Component {
                 <div className={titleClassName}>{title}</div>
                 <div className={durationClassName}>{duration}</div>
                 <div className={companyClassName}>{company}</div>
-                <Paragraphs value={description}/>
+                <Paragraphs value={description} className={descriptionClassName}/>
                 <TechStack value={techStack}/>
                 <Projects value={projects}/>
             </div>

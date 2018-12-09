@@ -1,5 +1,4 @@
 import React from 'react';
-import './paragraphs.scss';
 
 export class Paragraphs extends React.Component {
 

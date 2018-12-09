@@ -1,9 +1,10 @@
 
 .experience-item {
 
+  //user styles
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-template-areas: "title title" "company duration" "paragraphs paragraphs" "tech tech" "proj proj";
+  grid-template-areas: "title title" "company duration" "description description" "tech tech" "proj proj";
   grid-gap: 7px 0;
 
   .title {
@@ -15,6 +16,12 @@
   .duration {
     grid-area: duration;
     padding-left: 15px;
+  }
+
+  .description {
+    grid-area: description;
+    font-size: 0.9em;
+    margin-bottom: 5px;
   }
 
   .company {

@@ -1,29 +1,33 @@
 .page {
 
+  //app styles
   width: 210mm;
   height: 297mm;
   display: block;
   overflow: hidden;
-
-  padding: 5px 10px;
-
-  font-family: Niramit, Arial, Helvetica, sans-serif;
-  font-size: 12pt;
-  line-height: 145%;
-
-  margin-top: 10px;
-  background-color: white;
 
   page-break-after: always;
   page-break-before: avoid;
   page-break-inside: avoid;
 
   .page-container {
-
     width: 210mm;
     max-height: 297mm;
     display: grid;
     grid-template-columns: auto 1fr;
-    grid-gap: 10px 5px;
   }
+
+  //user styles
+
+  .page-container {
+    grid-gap: 0 5px;
+  }
+
+  padding: 5px 10px;
+  font-family: Niramit, Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+  line-height: 145%;
+  margin-top: 10px;
+  background-color: white;
+
 }

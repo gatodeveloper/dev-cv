@@ -1,3 +1,12 @@
 .education {
+  //app styles
   grid-column-start: 2;
+
+  //user styles
+  .label {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(0, 81, 122);
+  }
 }
