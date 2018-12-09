@@ -27,7 +27,3 @@ Then- make sure to omit the label key from the objects which reside on pages oth
 
 ## Output Example
 [Click Here](https://github.com/EyalPerry/dev-cv/blob/master/output-example.pdf)
-
-## Known Issues
-1) public/cv.json.details.experience.items.projects is WIP - it is not rendered ATM.
-2) public/cv.json.details.education.items.projects is WIP - it is not rendered ATM.
