@@ -12,9 +12,12 @@ export class ParadigmItem extends React.Component {
     };
 
     render() {
-        const {value, className} = this.props;
+        const {value, className, style} = this.props;
+
         return (
-            <div className={className}>{value}</div>
+            <div className={className} style={style}>
+                {value}
+            </div>
         );
     }
 }

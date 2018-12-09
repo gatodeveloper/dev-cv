@@ -1,5 +1,14 @@
 .tech-stack {
 
+  //app styles
+  .items {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+  }
+
+  //user styles
   font-size: 0.8em;
 
   .label {
@@ -10,9 +19,5 @@
 
   .items {
     max-width: 400px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    align-content: flex-start;
   }
 }

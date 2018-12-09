@@ -37,16 +37,18 @@ export class ExperienceItem extends React.Component {
             descriptionClassName
         } = this.props;
 
+
         const duration = `${startDate} ${dateDelimiter} ${typeof endDate !== 'undefined' ? endDate : ongoingText}`;
+        const style = this.props.style ? this.props.style : {};
 
         return (
-            <div className={className}>
-                <div className={titleClassName}>{title}</div>
-                <div className={durationClassName}>{duration}</div>
-                <div className={companyClassName}>{company}</div>
-                <Paragraphs value={description} className={descriptionClassName}/>
-                <TechStack value={techStack}/>
-                <Projects value={projects}/>
+            <div className={className} style={style.self}>
+                <div className={titleClassName} style={style.title}>{title}</div>
+                <div className={durationClassName} style={style.duration}>{duration}</div>
+                <div className={companyClassName} style={style.company}>{company}</div>
+                <Paragraphs value={description} style={style.description} className={descriptionClassName}/>
+                <TechStack value={techStack} style={style.techStack}/>
+                <Projects value={projects} style={style.projects}/>
             </div>
         );
     }

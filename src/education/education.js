@@ -12,21 +12,25 @@ export class Education extends React.Component {
 
     render() {
 
-        const {
+        let {
             items,
             label,
             className,
             mainLabelClassName,
+            style,
             ...itemProps
         } = this.props;
 
+        style = style? style: {};
+
         return (
-            <section className={className}>
+            <section className={className} style={style.self}>
                 <LabeledList label={label}
                              items={items}
                              itemProps={itemProps}
                              ItemComponent={EducationItem}
                              labelClassName={mainLabelClassName}
+                             style={style.container}
                 />
             </section>
         );

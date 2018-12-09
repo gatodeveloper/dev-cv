@@ -1,10 +1,19 @@
 .knowledge {
 
-  grid-area: knowledge;
-
+  //app styles
   display: grid;
-  grid-template-areas: "technologies" "paradigms" ;
   grid-auto-columns: auto;
+
+  .paradigms {
+    grid-area: paradigms;
+  }
+
+  .technologies {
+    grid-area: technologies;
+  }
+
+  //user styles
+  grid-template-areas: "technologies" "paradigms" ;
 
   .knowledge-label {
     font-size: 1.1em;

@@ -35,12 +35,14 @@ export class ProjectItem extends React.Component {
             featuresLabel
         } = {...defaults, ...value};
 
+        const style = this.props.style ? this.props.style : {};
+
         return (
-          <div className={className}>
-              <div className={classNames.name}>{name}</div>
-              <Paragraphs value={description} className={classNames.description}/>
-              <Label content={featuresLabel} className={classNames.featuresLabel}/>
-              <Paragraphs value={features} className={classNames.features}/>
+          <div className={className} style={style.self}>
+              <div className={classNames.name} style={style.name}>{name}</div>
+              <Paragraphs value={description} className={classNames.description} style={style.description}/>
+              <Label content={featuresLabel} className={classNames.featuresLabel} style={style.featuresLabel}/>
+              <Paragraphs value={features} className={classNames.features} style={style.features}/>
           </div>
         );
     }

@@ -12,21 +12,25 @@ export class Experience extends React.Component {
 
     render() {
 
-        const {
+        let {
             items,
             label,
             className,
             mainLabelClassName,
+            style,
             ...itemProps
         } = this.props;
 
+        style = style ? style : {};
+
         return (
-            <section className={className}>
+            <section className={className} style={style.self}>
                 <LabeledList items={items}
-                      label={label}
-                      itemProps={itemProps}
-                      ItemComponent={ExperienceItem}
-                      labelClassName={mainLabelClassName}
+                             label={label}
+                             itemProps={itemProps}
+                             ItemComponent={ExperienceItem}
+                             labelClassName={mainLabelClassName}
+                             style={style.container}
                 />
             </section>
         );

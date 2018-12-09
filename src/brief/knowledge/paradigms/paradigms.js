@@ -19,7 +19,8 @@ export class Paradigms extends React.Component {
             },
             className,
             listClassName,
-            labelClassName
+            labelClassName,
+            style
         } = this.props;
 
         return (
@@ -29,6 +30,7 @@ export class Paradigms extends React.Component {
                          className={className}
                          labelClassName={labelClassName}
                          listClassName={listClassName}
+                         style={style}
             />
         );
     }

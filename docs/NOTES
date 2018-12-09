@@ -1,0 +1,15 @@
+NATIVE APP MVP check list:
+
+* Electron
+* Print to PDF
+* Persist + Load Files
+* Webpack support
+* Emotion support
+* MobX + Emotion integration
+
+Features:
+
+1)Manage Several CV Files
+2)Edit Content
+3)Edit General Component Style
+4)Edit Specific Component Style

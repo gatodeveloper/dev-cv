@@ -11,12 +11,13 @@ export class Links extends React.Component {
     };
 
     render() {
-        const {value, className} = this.props;
+        const {value, className, style} = this.props;
 
         return (
           <List className={className}
                 items={value}
                 ItemComponent={Link}
+                style={style}
           />
         );
     }

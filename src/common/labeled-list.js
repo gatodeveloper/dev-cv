@@ -7,27 +7,34 @@ export class LabeledList extends React.Component {
     static defaultProps = {
         className: 'labeled-list',
         labelClassName: 'label',
-        listClassName: 'item-container',
+        listClassName: 'item-container'
     };
 
     render() {
 
-        const {
+        let {
             label,
             className,
             labelClassName,
             listClassName,
+            style,
             ...listProps
         } = this.props;
 
+        style = style? style  : {};
+
         return (
-            <div className={className}>
+            <div className={className} style={style.self}>
                 {
-                    typeof label !== 'undefined' &&
-                    <Label content={label} className={labelClassName}/>
+
+                    <Label content={label}
+                           className={labelClassName}
+                           style={style.label}
+                    />
                 }
                 <List {...listProps}
                       className={listClassName}
+                      style={style.list}
                 />
             </div>
         );

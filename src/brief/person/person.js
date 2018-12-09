@@ -41,19 +41,21 @@ export class Person extends React.Component {
             skypeClassName,
             emailClassName,
             emailLinkClassName,
-            residenceClassName,
+            residenceClassName
         } = this.props;
 
+        const style = this.props.style ? this.props.style : {email:{}};
+
         return (
-            <div className={className}>
-                <img className={headshotClassName} src={headshotSource} alt={headshotAlt}/>
-                <div className={nameClassName}>{name}</div>
-                <div className={titleClassName}>{title}</div>
-                <address className={residenceClassName}>{residence}</address>
-                <div className={mobileClassName}>{`${preMobile}${mobile}`}</div>
-                <div className={skypeClassName}>{`${preSkype}${skype}`}</div>
-                <div className={emailClassName}>
-                    <a className={emailLinkClassName} href={`mailto:${email}`}>{email}</a>
+            <div className={className} style={style.self}>
+                <img className={headshotClassName} src={headshotSource} alt={headshotAlt} style={style.headshot}/>
+                <div className={nameClassName} style={style.name}>{name}</div>
+                <div className={titleClassName} style={style.title}>{title}</div>
+                <address className={residenceClassName} style={style.residence}>{residence}</address>
+                <div className={mobileClassName} style={style.mobile}>{`${preMobile}${mobile}`}</div>
+                <div className={skypeClassName} style={style.skype}>{`${preSkype}${skype}`}</div>
+                <div className={emailClassName} style={style.email.self}>
+                    <a className={emailLinkClassName} style={style.email.link} href={`mailto:${email}`}>{email}</a>
                 </div>
             </div>
         );

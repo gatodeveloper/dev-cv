@@ -23,13 +23,16 @@ export class Link extends React.Component {
             },
             className,
             linkClassName,
-            imageClassName
+            imageClassName,
+
         } = this.props;
 
+        const style = this.props.style ? this.props.style : {link:{}};
+
         return (
-            <div className={className}>
-                <a href={url} className={linkClassName}>
-                    <img src={imageSource} alt={imageAlt} className={imageClassName}/>
+            <div className={className} style={style.self}>
+                <a href={url} className={linkClassName} style={style.link.url}>
+                    <img src={imageSource} alt={imageAlt} className={imageClassName} style={style.link.image}/>
                 </a>
             </div>
         );

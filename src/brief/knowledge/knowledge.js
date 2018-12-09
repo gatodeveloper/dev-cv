@@ -7,7 +7,7 @@ export class Knowledge extends React.Component {
 
     static defaultProps = {
         className: 'knowledge',
-        labelClassName: 'knowledge-label',
+        labelClassName: 'knowledge-label'
     };
 
     render() {
@@ -21,15 +21,19 @@ export class Knowledge extends React.Component {
             labelClassName
         } = this.props;
 
+        const style = this.props.style? this.props.style  : {};
+
         return (
-            <div className={className}>
+            <div className={className} style={style.self}>
 
                 <Technologies value={technologies}
                               labelClassName={labelClassName}
+                              style={style.technologies}
                 />
 
                 <Paradigms value={paradigms}
                            labelClassName={labelClassName}
+                           style={style.paradigms}
                 />
                 
             </div>

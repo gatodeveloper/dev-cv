@@ -1,6 +1,7 @@
 .brief-links {
-  grid-area: links;
+  //app styles
   display: flex;
-  padding-top: 5px;
   flex-flow: row wrap;
+  //user styles
+  padding-top: 5px;
 }

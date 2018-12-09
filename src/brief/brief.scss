@@ -1,5 +1,22 @@
 .brief {
+
+  //app styles
   display: grid;
   grid-auto-rows: min-content;
+
+
+  .person {
+    grid-area: person;
+  }
+
+  .links {
+    grid-area: links;
+  }
+
+  .knowledge {
+    grid-area: knowledge;
+  }
+
+  //user styles
   grid-template-areas: "person" "links" "knowledge";
 }

@@ -40,18 +40,18 @@ export class EducationItem extends React.Component {
             classOfClassName
         } = this.props;
 
-        return (
-            <React.Fragment>
-                <div className={className}>
-                    <div className={degreeClassName}>{degree}</div>
-                    <div className={institutionClassName}>{`${preInstitution}${institution}${postInstitution}`}</div>
-                    <div className={gpaClassName}>{`${preGPA}${gpa}${postGpa}`}</div>
-                    <div className={classOfClassName}>{`${preClassOf}${classOf}${postClassOf}`}</div>
-                    <TechStack value={techStack}/>
-                    <Projects value={projects}/>
-                </div>
+        const style = this.props.style ? this.props.style : {};
 
-            </React.Fragment>
+        return (
+            <div className={className} style={style.self}>
+                <div className={degreeClassName} style={style.degree}>{degree}</div>
+                <div className={institutionClassName} style={style.institution}>{`${preInstitution}${institution}${postInstitution}`}</div>
+                <div className={gpaClassName} style={style.gpa}>{`${preGPA}${gpa}${postGpa}`}</div>
+                <div className={classOfClassName} style={style.classOf}>{`${preClassOf}${classOf}${postClassOf}`}</div>
+                <TechStack value={techStack} style={style.techStack}/>
+                <Projects value={projects} style={style.projects}/>
+            </div>
+
         );
     }
 }

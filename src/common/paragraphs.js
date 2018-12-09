@@ -7,14 +7,15 @@ export class Paragraphs extends React.Component {
     };
 
     render() {
-        const {value, className} = this.props;
+        const {value, className, style} = this.props;
 
         if(typeof value === 'undefined' || value === null){
             return null;
         }
 
         return (
-            <div className={className}>
+            <div className={className}
+                 style={style}>
                 {value.map(this.renderParagraph)}
             </div>
         );

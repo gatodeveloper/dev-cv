@@ -7,14 +7,15 @@ export default class Page extends React.Component {
 
     static defaultProps = {
         className: 'page',
-        containerClassName:'page-container'
+        containerClassName:'page-container',
+        style:{}
     };
 
     render() {
-        const {value = [], className, containerClassName} = this.props;
+        const {value = [], className, containerClassName, style} = this.props;
         return (
-            <div className={className}>
-                <div className={containerClassName}>
+            <div className={className} style={style.self}>
+                <div className={containerClassName} style={style.container}>
                     {value.map(this.renderItem)}
                 </div>
             </div>

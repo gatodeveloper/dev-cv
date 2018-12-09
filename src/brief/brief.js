@@ -19,11 +19,13 @@ export class Brief extends React.Component {
             className
         } = this.props;
 
+        const style = this.props.style? this.props.style  : {};
+
         return (
-            <aside className={className}>
-                <Person value={person}/>
-                <Links value={links}/>
-                <Knowledge value={knowledge}/>
+            <aside className={className} style={style.self}>
+                <Person value={person} style={style.person}/>
+                <Links value={links} style={style.links}/>
+                <Knowledge value={knowledge} style={style.knowledge}/>
             </aside>
         );
     }

@@ -17,6 +17,7 @@ export class TechStack extends React.Component {
             className,
             listClassName,
             labelClassName,
+            style,
             label,
             value
         } = this.props;
@@ -28,6 +29,7 @@ export class TechStack extends React.Component {
                          className={className}
                          listClassName={listClassName}
                          labelClassName={labelClassName}
+                         style={style}
             />
         );
     }

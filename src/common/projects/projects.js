@@ -21,7 +21,8 @@ export class Projects extends React.Component {
             value,
             className,
             labelClassName,
-            listClassName
+            listClassName,
+            style
         } = this.props;
 
         if (value === null || typeof value === 'undefined') {
@@ -37,6 +38,7 @@ export class Projects extends React.Component {
                          className={className}
                          labelClassName={labelClassName}
                          listClassName={listClassName}
+                         style={style}
             />
         );
     }
