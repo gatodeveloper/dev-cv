@@ -6,7 +6,7 @@
         {
           "person": {
             "name": "Eyal Perry",
-            "title": "Full Stack Developer",
+            "title": "Software Engineer",
             "residence": "Karmiel, Israel.",
             "headshot": {
               "source": "http://localhost:3000/headshot.png"
@@ -20,6 +20,11 @@
               "url": "https://www.linkedin.com/in/eyalperry/",
               "imageSource": "http://localhost:3000/linkedin.png",
               "imageAlt": "LinkedIn"
+            },
+            {
+              "url":"https://twitter.com/_eyalPerry",
+              "imageSource":"http://localhost:3000/twitter.png",
+              "imageAlt": "Twitter"
             },
             {
               "url": "https://stackoverflow.com/story/eyal-perry",
@@ -56,20 +61,16 @@
                   "value": "Proficient"
                 },
                 {
-                  "name": "ReactiveX",
+                  "name": "Node.js",
+                  "value": "Proficient"
+                },
+                {
+                  "name": "Docker",
                   "value": "Proficient"
                 },
                 {
                   "name": "HTML",
-                  "value": "Intermediate"
-                },
-                {
-                  "name": "S/CSS",
-                  "value": "Intermediate"
-                },
-                {
-                  "name": "Node.js",
-                  "value": "Intermediate"
+                  "value": "Proficient"
                 },
                 {
                   "name": "MongoDB",
@@ -80,16 +81,12 @@
                   "value": "Intermediate"
                 },
                 {
-                  "name": "Docker",
+                  "name": "S/CSS",
                   "value": "Intermediate"
                 },
                 {
                   "name": "Git",
                   "value": "Intermediate"
-                },
-                {
-                  "name": "AWS",
-                  "value": "Basic"
                 }
               ]
             },
@@ -109,21 +106,22 @@
       [
         "experience",
         {
-          "label":"Experience",
+          "label": "Experience",
           "items": [
             {
               "title": "Software Engineer",
               "company": "Wix",
               "startDate": "December 2018",
-              "paragraphs": [
-                "As a member of the infrastructure team, I am responsible for developing and testing components in use by many Wix products."
+              "description": [
+                "Developing and Testing components used by Wix.com features."
               ],
               "techStack": [
+                "Javascript",
+                "Typescript",
                 "React",
                 "Redux",
-                "Node.js",
                 "MobX",
-                "Typescript"
+                "Node.js"
               ]
             },
             {
@@ -131,10 +129,11 @@
               "company": "CorAlert",
               "startDate": "July 2017",
               "endDate": "November 2018",
-              "paragraphs": [
+              "description": [
                 "Designing, Testing & Developing a Cloud Backed IoT application."
               ],
               "techStack": [
+                "Javascript",
                 "React",
                 "Redux",
                 "SCSS",
@@ -150,7 +149,7 @@
                 "items": [
                   {
                     "name": "CorAlert Device",
-                    "paragraphs": [
+                    "description": [
                       "Development of a software stack for a medical device which detects heart failure."
                     ],
                     "features": [
@@ -161,12 +160,12 @@
                   },
                   {
                     "name": "CorAlert Management Console",
-                    "paragraphs": [
+                    "description": [
                       "Development of a cloud application which complements the company's device."
                     ],
                     "features": [
                       "Track the status of devices.",
-                      "Deploy configuration profiles to devices.",
+                      "Deploy and create device configuration profiles",
                       "Deploy software versions to devices.",
                       "View device logs (both historical and real time).",
                       "View device generated data."
@@ -180,7 +179,7 @@
               "company": "CodeValue",
               "startDate": "March 2016",
               "endDate": "July 2017",
-              "paragraphs": [
+              "description": [
                 "Developing Software Systems and API's, as specified by client stakeholders."
               ],
               "techStack": [
@@ -190,32 +189,23 @@
                 "WPF",
                 "ReactiveX",
                 "XUnit"
-              ],
-              "projects": {
-                "items": [
-                  {
-                    "name": "Video Camera Framework",
-                    "startDate": "March 2016",
-                    "endDate": "February 2017",
-                    "paragraphs": [
-                      "The framework abstracts client code from intricacies of vendor implementation of video camera drivers."
-                    ],
-                    "features": [
-                      "Standardization of video camera functionality",
-                      "Extensible via Base Classes",
-                      "Configuration agnostic",
-                      "Protocol Agnostic - (IP, USB, etc.)"
-                    ]
-                  }
-                ]
-              }
-            },
+              ]
+            }
+          ]
+        }
+      ]
+    ],
+    [
+      [
+        "experience",
+        {
+          "items": [
             {
               "title": "Teaching Assistant",
               "company": "CodeValue",
               "startDate": "June 2016",
               "endDate": "July 2017",
-              "paragraphs": [
+              "description": [
                 [
                   "Training entry level employees, as part of an introductory .NET course.",
                   "Screening candidates by evaluation of assignments",
@@ -233,59 +223,24 @@
               "company": "Zeiss",
               "startDate": "February 2013",
               "endDate": "March 2016",
-              "paragraphs": [
-                "Development of in-house and client facing Software Systems."
+              "description": [
+                "Development of in-house and client facing Software Systems.",
+                "Part Time Position."
               ],
               "techStack": [
                 "C#",
                 "WPF",
                 ".NET",
                 "Entity Framework"
-              ],
-              "projects": {
-                "items": [
-                  {
-                    "name": "Object Configuration Library",
-                    "startDate": "September 2015",
-                    "endDate": "March 2016",
-                    "paragraphs": [
-                      "Developing a library which bridges the gap between native objects and managed code, By Mutating properties of live (in-memory) native objects via a C# API"
-                    ]
-                  },
-                  {
-                    "name": "Project Manager",
-                    "startDate": "March 2014",
-                    "endDate": "March 2016",
-                    "paragraphs": [
-                      "Implementation of a Project Resource Management web application"
-                    ],
-                    "features": [
-                      "Manual input of work hours- per employee, per project, per date.",
-                      "Email notification of non complying employees.",
-                      "Management of employees, departments, projects and project categories.",
-                      "Report Generation"
-                    ]
-                  },
-                  {
-                    "name": "CDC / RegC Application",
-                    "startDate": "February 2013",
-                    "endDate": "March 2016",
-                    "paragraphs": [
-                      "Maintaining and developing a composite-machine control application."
-                    ]
-                  }
-                ]
-              }
+              ]
             }
           ]
         }
-      ]
-    ],
-    [
+      ],
       [
         "education",
         {
-          "label":"Education",
+          "label": "Education",
           "items": [
             {
               "degree": "B.Sc. Software Engineering",
@@ -299,35 +254,17 @@
                 "Android"
               ],
               "projects": {
-                "name": "Smart Calendar",
-                "startDate": "March 2015",
-                "endDate": "January 2016",
-                "paragraphs": [
-                  "An Android Application which enhances itinerary management with location awareness."
-                ],
-                "features": [
+                "items": [
                   {
-                    "name": "Leave on Time",
-                    "paragraphs": [
-                      "Notify users when they should depart their current location, so that no appointment is ever missed"
-                    ]
-                  },
-                  {
-                    "name": "Scheduling Collision Detection",
-                    "paragraphs": [
-                      "Warn users about events they would not be able to attend due to time and location constraints"
-                    ]
-                  },
-                  {
-                    "name": "Supervised Itinerary Management",
-                    "paragraphs": [
-                      "A supervisor user (ex. a manager) can share a view only calendar with a supervised user (ex. employee)"
-                    ]
-                  },
-                  {
-                    "name": "Itinerary Progression Tracking",
-                    "paragraphs": [
-                      "Informs supervisor users whenever their subordinates arrive at the venue, are going to be late to the venue or are leaving the venue ahead of time."
+                    "name": "Smart Calendar",
+                    "description": [
+                      "An Android Application which enhances itinerary management with location awareness."
+                    ],
+                    "features": [
+                      "Leave On Time for next appointment",
+                      "Predict missed appointments",
+                      "Team Itinerary planning and management",
+                      "On site and on time presence assurance"
                     ]
                   }
                 ]

@@ -1,7 +1,7 @@
 import React from 'react';
 import './label.scss';
 
-export default (props) => {
+export const Label = (props) => {
     const {content, className = 'label', style} = props;
     return (
         <div className={className}

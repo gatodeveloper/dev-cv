@@ -3,9 +3,8 @@
 
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-template-areas: "title title" "company duration" "paragraphs paragraphs" "tech tech";
-  grid-gap: 5px 0;
-  margin-bottom: 17px;
+  grid-template-areas: "title title" "company duration" "paragraphs paragraphs" "tech tech" "proj proj";
+  grid-gap: 7px 0;
 
   .title {
     grid-area: title;
@@ -26,5 +25,9 @@
 
   .tech-stack {
     grid-area: tech;
+  }
+
+  .projects {
+    grid-area: proj;
   }
 }

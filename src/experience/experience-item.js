@@ -1,6 +1,6 @@
 import React from "react";
 import './experience-item.scss';
-import {Paragraphs, TechStack} from "Common";
+import {Paragraphs, TechStack, Projects} from "Common";
 
 export class ExperienceItem extends React.Component {
 
@@ -11,8 +11,8 @@ export class ExperienceItem extends React.Component {
         companyClassName: 'company',
     };
 
-    static getKey = ({title, company}) => {
-        return title + company;
+    static getKey = ({title, company, startDate}) => {
+        return `${title}${company}${startDate}`;
     };
 
     render() {
@@ -23,11 +23,12 @@ export class ExperienceItem extends React.Component {
                 startDate,
                 endDate,
                 company,
-                paragraphs,
+                description,
                 techStack,
+                projects
             },
             ongoingText = 'Present',
-            dateDelimiter=' - ',
+            dateDelimiter = ' - ',
             className,
             titleClassName,
             durationClassName,
@@ -41,8 +42,9 @@ export class ExperienceItem extends React.Component {
                 <div className={titleClassName}>{title}</div>
                 <div className={durationClassName}>{duration}</div>
                 <div className={companyClassName}>{company}</div>
-                <Paragraphs value={paragraphs}/>
+                <Paragraphs value={description}/>
                 <TechStack value={techStack}/>
+                <Projects value={projects}/>
             </div>
         );
     }

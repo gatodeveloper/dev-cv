@@ -1,32 +1,43 @@
 import React from 'react';
 import './projects.scss';
-import {Project} from "./project";
+import {ProjectItem} from "./project-item";
+import {LabeledList} from "Common/labeled-list";
 
 export class Projects extends React.Component {
 
     static defaultProps = {
-        className: 'projects'
+        className: 'projects',
+        labelClassName: 'label',
+        listClassName: 'items',
+        defaults: {
+            label: "Projects"
+        }
     };
 
     render() {
-        const {value, className} = this.props;
+
+        const {
+            defaults,
+            value,
+            className,
+            labelClassName,
+            listClassName
+        } = this.props;
 
         if (value === null || typeof value === 'undefined') {
             return null;
         }
 
-        const {items} = value;
+        const {label, items} = {...defaults, ...value};
 
         return (
-            <div className={className}>
-                {items.map(this.renderProject)}
-            </div>
+            <LabeledList items={items}
+                         label={label}
+                         ItemComponent={ProjectItem}
+                         className={className}
+                         labelClassName={labelClassName}
+                         listClassName={listClassName}
+            />
         );
     }
-
-    renderProject = (item) => {
-        return (
-            <Project value={item} key={item.name}/>
-        )
-    };
 }

@@ -1,10 +1,15 @@
 .education-item {
   display: grid;
-  grid-template-rows: 1fr 1fr auto;
-  grid-template-columns: max-content max-content max-content max-content;
-  grid-template-areas: "degree degree degree institution" "gpa classof nope nope" "tech tech tech tech";
+  grid-template-rows: auto auto auto 1fr;
+  grid-template-columns: max-content max-content;
+  grid-template-areas: "degree institution"
+                       "classof gpa"
+                       "tech tech"
+                       "proj proj";
+
   grid-gap: 3px 0;
 
+  padding-bottom: 10px;
   .degree {
     grid-area: degree;
     font-size: 0.95em;
@@ -13,7 +18,6 @@
   .institution {
     grid-area: institution;
     font-size: 0.95em;
-    padding-left: 5px;
   }
 
   .gpa {
@@ -22,12 +26,15 @@
   }
 
   .class-of {
-    margin-left: 5px;
     grid-area: classof;
     font-size: 0.9em;
   }
 
   .tech-stack {
     grid-area: tech;
+  }
+
+  .projects {
+    grid-area: proj;
   }
 }

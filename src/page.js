@@ -6,14 +6,17 @@ import './page.scss';
 export default class Page extends React.Component {
 
     static defaultProps = {
-        className: 'page'
+        className: 'page',
+        containerClassName:'page-container'
     };
 
     render() {
-        const {value = [], className, style} = this.props;
+        const {value = [], className, containerClassName} = this.props;
         return (
-            <div className={className} style={style}>
-                {value.map(this.renderItem)}
+            <div className={className}>
+                <div className={containerClassName}>
+                    {value.map(this.renderItem)}
+                </div>
             </div>
         );
     }

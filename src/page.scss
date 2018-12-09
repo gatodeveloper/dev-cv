@@ -1,11 +1,29 @@
-.page {
-  background-color: white;
-  max-width: var(--page-width);
-  height: var(--page-height);
-  display: grid;
-  grid-template-columns: auto 1fr;
+@page {
+  size: A4;
+}
 
-  margin-bottom: 10px;
-  padding: 5px;
-  page-break-after: avoid;
+.page {
+
+  width: 210mm;
+  height: 297mm;
+  display: block;
+  overflow: hidden;
+
+  padding: 5px 10px;
+
+  margin-top: 10px;
+  background-color: white;
+
+  page-break-after: always;
+  page-break-before: avoid;
+  page-break-inside: avoid;
+
+  .page-container {
+
+    width: 210mm;
+    max-height: 297mm;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 10px 5px;
+  }
 }

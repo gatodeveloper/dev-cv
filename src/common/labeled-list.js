@@ -1,8 +1,8 @@
 import React from 'react';
-import List from "./list";
-import Label from './label';
+import {List} from "./list";
+import {Label} from './label';
 
-export default class LabeledList extends React.Component {
+export class LabeledList extends React.Component {
 
     static defaultProps = {
         className: 'labeled-list',

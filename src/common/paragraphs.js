@@ -1,7 +1,7 @@
 import React from 'react';
 import './paragraphs.scss';
 
-export default class Paragraphs extends React.Component {
+export class Paragraphs extends React.Component {
 
     static defaultProps = {
         className: 'paragraphs'
@@ -9,6 +9,10 @@ export default class Paragraphs extends React.Component {
 
     render() {
         const {value, className} = this.props;
+
+        if(typeof value === 'undefined' || value === null){
+            return null;
+        }
 
         return (
             <div className={className}>

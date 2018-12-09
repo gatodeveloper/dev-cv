@@ -1,6 +1,6 @@
 import React from "react";
 import './education-item.scss';
-import {TechStack} from "Common";
+import {TechStack, Projects} from "Common";
 
 export class EducationItem extends React.Component {
 
@@ -30,7 +30,8 @@ export class EducationItem extends React.Component {
                 preClassOf = 'Class of ',
                 postClassOf = '.',
                 classOf,
-                techStack=[]
+                techStack=[],
+                projects=[]
             },
             className,
             degreeClassName,
@@ -40,13 +41,17 @@ export class EducationItem extends React.Component {
         } = this.props;
 
         return (
-            <div className={className}>
-                <div className={degreeClassName}>{degree}</div>
-                <div className={institutionClassName}>{`${preInstitution}${institution}${postInstitution}`}</div>
-                <div className={gpaClassName}>{`${preGPA}${gpa}${postGpa}`}</div>
-                <div className={classOfClassName}>{`${preClassOf}${classOf}${postClassOf}`}</div>
-                <TechStack value={techStack}/>
-            </div>
+            <React.Fragment>
+                <div className={className}>
+                    <div className={degreeClassName}>{degree}</div>
+                    <div className={institutionClassName}>{`${preInstitution}${institution}${postInstitution}`}</div>
+                    <div className={gpaClassName}>{`${preGPA}${gpa}${postGpa}`}</div>
+                    <div className={classOfClassName}>{`${preClassOf}${classOf}${postClassOf}`}</div>
+                    <TechStack value={techStack}/>
+                    <Projects value={projects}/>
+                </div>
+
+            </React.Fragment>
         );
     }
 }

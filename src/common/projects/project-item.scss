@@ -1,0 +1,30 @@
+.project {
+
+  margin-bottom: 7px;
+  padding: 2px;
+
+  .name {
+    display: inline-block;
+    border-bottom: 2px solid dodgerblue;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 7px;
+    font-size: 1.0em;
+    padding-right: 7px;
+  }
+
+  .description {
+    margin-bottom: 5px;
+    font-style: italic;
+  }
+
+  .features-label {
+    margin-bottom: 3px;
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+
+  .features {
+    margin-left: 5px;
+    margin-bottom: 5px;
+  }
+}
