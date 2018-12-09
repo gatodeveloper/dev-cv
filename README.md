@@ -18,7 +18,7 @@ A *Print Friendly* CV web app, which you can easily set up, modify and export to
 7) Change the font in the src/index.html stylesheet tag + src/index.scss body selector to something more you.
 8) Print to PDF with Google Chrome.
 
-## Multipage Notes
+### How to use Multipage
 0) You can break down your cv across multiple pages pretty easily:
 Just divide up an experience or education list into two (or three, or N) - across multiple page entries in cv.json.
 Then- make sure to omit the label key from the objects which reside on pages other than the first. 
@@ -27,3 +27,11 @@ Then- make sure to omit the label key from the objects which reside on pages oth
 
 ## Output Example
 [Click Here](https://github.com/EyalPerry/dev-cv/blob/master/output-example.pdf)
+
+## Native App (WIP)
+Status: Design
+
+### Features
+0) Operate Multiple cv.json Files.
+1) UI for Editing
+2) CSS in JS style control over layout
