@@ -1,5 +1,6 @@
 import React from 'react';
 import './paradigm-item.scss';
+import {Label} from "Common";
 
 export class ParadigmItem extends React.Component {
 
@@ -15,9 +16,8 @@ export class ParadigmItem extends React.Component {
         const {value, className, style} = this.props;
 
         return (
-            <div className={className} style={style}>
-                {value}
-            </div>
+            <Label className={className} style={style}
+                   content={value}/>
         );
     }
 }

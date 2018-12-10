@@ -23,27 +23,10 @@ export class Paragraphs extends React.Component {
 
     renderParagraph = (item, index) => {
 
-        let content;
-
-        if (item.constructor !== Array) {
-            content = item.toString();
-        } else {
-            content = item.map(this.renderLines);
-        }
-
         return (
             <p key={index}>
-                {content}
-            </p>
-        );
-    };
-
-    renderLines = (item, index) => {
-        return (
-            <React.Fragment key={index}>
                 {item.toString()}
-                <br/>
-            </React.Fragment>
+            </p>
         );
     };
 }
