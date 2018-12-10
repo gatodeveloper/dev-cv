@@ -1,7 +1,7 @@
 import React from 'react';
 import './projects.scss';
 import {ProjectItem} from "./project-item";
-import {LabeledList} from "Common/labeled-list";
+import {LabeledList} from "Common/list/labeled-list";
 
 export class Projects extends React.Component {
 

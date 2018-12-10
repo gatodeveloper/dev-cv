@@ -1,7 +1,7 @@
 import React from 'react';
 import './tech-stack.scss';
 import TechStackItem from './tech-stack-item';
-import {LabeledList} from 'Common/labeled-list';
+import {LabeledList} from 'Common/list/labeled-list';
 
 export class TechStack extends React.Component {
 

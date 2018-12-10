@@ -1,10 +1,10 @@
 import React from 'react'
-import {Link} from "./link";
-import './links.scss';
+import {PersonalLink} from "./personal-link";
+import './personal-links.scss';
 
 import {List} from 'Common';
 
-export class Links extends React.Component {
+export class PersonalLinks extends React.Component {
 
     static defaultProps = {
         className: 'brief-links'
@@ -16,7 +16,7 @@ export class Links extends React.Component {
         return (
           <List className={className}
                 items={value}
-                ItemComponent={Link}
+                ItemComponent={PersonalLink}
                 style={style}
           />
         );

@@ -1,6 +1,6 @@
 import React from 'react';
 import {List} from "./list";
-import {Label} from './label';
+import {Label} from 'Common/label';
 
 export class LabeledList extends React.Component {
 

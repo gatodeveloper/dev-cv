@@ -1,6 +1,7 @@
-export {LabeledList} from "./labeled-list";
 export {Paragraphs} from "./paragraphs";
-export {List} from './list'
+export {List, LabeledList} from './list'
 export {Label} from './label';
 export {TechStack} from './tech-stack';
 export {Projects} from './projects';
+export {ImageLink, TextLink} from './link';
+export {Image} from './image';

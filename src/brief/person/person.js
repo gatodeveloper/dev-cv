@@ -1,6 +1,6 @@
 import React from 'react';
 import './person.scss';
-
+import {TextLink, Image, Label} from 'Common'
 export class Person extends React.Component {
 
     static defaultProps = {
@@ -48,15 +48,19 @@ export class Person extends React.Component {
 
         return (
             <div className={className} style={style.self}>
-                <img className={headshotClassName} src={headshotSource} alt={headshotAlt} style={style.headshot}/>
-                <div className={nameClassName} style={style.name}>{name}</div>
-                <div className={titleClassName} style={style.title}>{title}</div>
+                <Image className={headshotClassName} src={headshotSource} alt={headshotAlt} style={style.headshot}/>
+                <Label className={nameClassName} style={style.name} content={name}/>
+                <Label className={titleClassName} style={style.title} content={title}/>
                 <address className={residenceClassName} style={style.residence}>{residence}</address>
-                <div className={mobileClassName} style={style.mobile}>{`${preMobile}${mobile}`}</div>
-                <div className={skypeClassName} style={style.skype}>{`${preSkype}${skype}`}</div>
-                <div className={emailClassName} style={style.email.self}>
-                    <a className={emailLinkClassName} style={style.email.link} href={`mailto:${email}`}>{email}</a>
-                </div>
+                <Label className={mobileClassName} style={style.mobile} content={`${preMobile}${mobile}`}/>
+                <Label className={skypeClassName} style={style.skype} content={`${preSkype}${skype}`}/>
+                <TextLink href={`mailto:${email}`}
+                          content={email}
+                          className={emailClassName}
+                          style={style.email.link}
+                          componentStyle={style.email.label}
+
+                />
             </div>
         );
     }

@@ -1,11 +1,11 @@
 import React from "react";
-import './link.scss';
+import './personal-link.scss';
+import {ImageLink} from 'Common';
 
-export class Link extends React.Component {
+export class PersonalLink extends React.Component {
 
     static defaultProps = {
         className: 'brief-link',
-        linkClassName: 'url',
         imageClassName: 'image'
     };
 
@@ -22,7 +22,6 @@ export class Link extends React.Component {
                 imageAlt
             },
             className,
-            linkClassName,
             imageClassName,
 
         } = this.props;
@@ -30,11 +29,14 @@ export class Link extends React.Component {
         const style = this.props.style ? this.props.style : {link:{}};
 
         return (
-            <div className={className} style={style.self}>
-                <a href={url} className={linkClassName} style={style.link.url}>
-                    <img src={imageSource} alt={imageAlt} className={imageClassName} style={style.link.image}/>
-                </a>
-            </div>
+            <ImageLink href={url}
+                       src={imageSource}
+                       alt={imageAlt}
+                       className={className}
+                       componentClassName={imageClassName}
+                       componentStyle={style.image}
+                       style={style.self}
+            />
         );
     }
 }
