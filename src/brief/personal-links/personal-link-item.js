@@ -1,8 +1,8 @@
 import React from "react";
-import './personal-link.scss';
+import './personal-link-item.scss';
 import {ImageLink} from 'Common';
 
-export class PersonalLink extends React.Component {
+export class PersonalLinkItem extends React.Component {
 
     static defaultProps = {
         className: 'brief-link',
