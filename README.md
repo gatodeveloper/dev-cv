@@ -34,3 +34,4 @@ Status: Design
 ### Features
 0) Operate Multiple cv.json Files.
 1) UI for Editing content and S/CSS
+2) Supporting ready made templates.
