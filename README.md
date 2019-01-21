@@ -26,7 +26,7 @@ Then- make sure to omit the label key from the objects which reside on pages oth
 1) Each page entry in cv.json will be printed on it's own page.
 
 ## Output Example
-[Click Here](https://github.com/EyalPerry/dev-cv/blob/master/output-example.pdf)
+[Click Here](https://github.com/gatodeveloper/dev-cv/blob/master/output-example-diego-santiesteban-s-cv.pdf)
 
 ## Cross Platform Native App (WIP)
 Status: Design
