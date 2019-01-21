@@ -5,34 +5,30 @@
         "brief",
         {
           "person": {
-            "name": "Eyal Perry",
+            "name": "Diego Santiesteban",
             "title": "Software Engineer",
-            "residence": "Karmiel, Israel.",
+            "residence": "Colombia, Bogotá.",
+            "info": "Regards, I'm a web developer and creator of Hagrid with more than 9 years of love for coding, always thinking of improving user experience.",
             "headshot": {
               "source": "http://localhost:3000/headshot.png"
             },
-            "mobile": "+972-54-314-6808",
-            "skype": "e.perry.pa",
-            "email": "e.perry.pa@gmail.com"
+            "mobile": "+057-316-537-8044",
+            "skype": "gato_developer",
+            "email": "gatodeveloper@gmail.com"
           },
           "links": [
             {
-              "url": "https://www.linkedin.com/in/eyalperry/",
+              "url": "https://www.linkedin.com/in/diego-santiesteban-257bb133/",
               "imageSource": "http://localhost:3000/linkedin.png",
               "imageAlt": "LinkedIn"
             },
             {
-              "url":"https://twitter.com/_eyalPerry",
+              "url":"https://twitter.com/gato_developer",
               "imageSource":"http://localhost:3000/twitter.png",
               "imageAlt": "Twitter"
             },
             {
-              "url": "https://stackoverflow.com/story/eyal-perry",
-              "imageSource": "http://localhost:3000/stackoverflow.png",
-              "imageAlt": "StackOverflow"
-            },
-            {
-              "url": "https://github.com/EyalPerry",
+              "url": "https://github.com/gatodeveloper",
               "imageSource": "http://localhost:3000/github.svg",
               "imageAlt": "GitHub"
             }
@@ -41,63 +37,76 @@
             "technologies": {
               "items": [
                 {
-                  "name": "C#",
-                  "value": "Expert"
-                },
-                {
-                  "name": ".NET/Core",
-                  "value": "Expert"
-                },
-                {
                   "name": "Javascript",
-                  "value": "Proficient"
+                  "value": "Expert"
+                },
+                {
+                  "name": "AngularJS",
+                  "value": "Expert"
+                },
+                {
+                  "name": "Angular",
+                  "value": "Expert"
                 },
                 {
                   "name": "React",
-                  "value": "Proficient"
+                  "value": "Intermediate"
                 },
                 {
                   "name": "Redux",
-                  "value": "Proficient"
+                  "value": "Intermediate"
                 },
                 {
-                  "name": "Node.js",
-                  "value": "Proficient"
+                  "name": "HTML/5",
+                  "value": "Expert"
+                },
+                {
+                  "name": "SASS/CSS/3",
+                  "value": "Expert"
                 },
                 {
                   "name": "Docker",
                   "value": "Proficient"
                 },
                 {
-                  "name": "HTML",
+                  "name": "Kubernetes",
+                  "value": "Proficient"
+                },
+                {
+                  "name": "AWS",
+                  "value": "Proficient"
+                },
+                {
+                  "name": "Git",
                   "value": "Proficient"
                 },
                 {
                   "name": "MongoDB",
+                  "value": "Proficient"
+                },
+                {
+                  "name": "Node.js",
+                  "value": "Expert"
+                },
+                {
+                  "name": "PHP",
+                  "value": "Proficient"
+                },
+                {
+                  "name": "Python",
                   "value": "Intermediate"
                 },
                 {
-                  "name": "RabbitMQ",
-                  "value": "Intermediate"
-                },
-                {
-                  "name": "S/CSS",
-                  "value": "Intermediate"
-                },
-                {
-                  "name": "Git",
-                  "value": "Intermediate"
+                  "name": "SCALA",
+                  "value": "Beginner"
                 }
               ]
             },
             "paradigms": {
               "items": [
-                "Test Driven",
-                "Async",
-                "Object Oriented",
-                "Functional",
                 "Microservices",
-                "Reactive"
+                "IoT",
+                "Machine learning"
               ]
             }
           }
@@ -109,86 +118,113 @@
           "label": "Experience",
           "items": [
             {
-              "title": "Frontend Engineer",
-              "company": "Wix",
-              "startDate": "December 2018",
+              "title": "Web Developer",
+              "company": "Iconshock, https://www.iconshock.com",
+              "startDate": "March 2010",
+              "endDate": "2012",
               "description": [
-                "Developing and Testing Wix.com core features."
+                "I started my carrer as a web developer, we did wordpress projects and we made a web tool to create several wordpress sites in a few minutes."
               ],
               "techStack": [
                 "Javascript",
-                "Typescript",
-                "React",
-                "Redux",
-                "MobX",
+                "HTML/5",
+                "SASS/CSS/3",
+                "PHP",
+                "Wordpress"
+              ]
+            },
+            {
+              "title": "Web Developer",
+              "company": "Giraffe",
+              "startDate": "Sept 2012",
+              "endDate": "2013",
+              "description": [
+                "Building the brand in companies for latam and USA."
+              ],
+              "techStack": [
+                "Javascript",
+                "HTML/5",
+                "SASS/CSS/3",
+                "PHP",
+                "Wordpress"
+              ]
+            },
+            {
+              "title": "Senior FE Developer",
+              "company": "Monoku, https://monoku.com",
+              "startDate": "August 2013",
+              "endDate": "2015",
+              "description": [
+                "Building applications for general customers and government entities."
+              ],
+              "techStack": [
+                "Javascript",
+                "AngularJS",
+                "RequireJS",
+                "Gulp",
+                "HTML/5",
+                "SASS/CSS/3",
                 "Node.js"
               ]
             },
             {
-              "title": "Software Engineer",
-              "company": "CorAlert",
-              "startDate": "July 2017",
-              "endDate": "November 2018",
+              "title": "CTO",
+              "company": "Ubicala, https://ubicala.co",
+              "startDate": "August 2013",
+              "endDate": "2015",
               "description": [
-                "Designing, Testing & Developing a Cloud Backed IoT application."
+                "We made an application and tools for real state brokers."
               ],
               "techStack": [
                 "Javascript",
-                "React",
-                "Redux",
-                "SCSS",
-                "Node.js",
-                "MongoDB",
-                ".NET Core",
-                "C#",
-                "RabbitMQ",
-                "Docker",
-                "AWS"
-              ],
-              "projects": {
-                "items": [
-                  {
-                    "name": "CorAlert Device",
-                    "description": [
-                      "Development of a software stack for a medical device which detects heart failure."
-                    ],
-                    "features": [
-                      "Upstream synchronization of logs and data.",
-                      "Downstream synchronization of software versions and configuration profiles.",
-                      "Configurable Parallelism of Medical algorithms"
-                    ]
-                  },
-                  {
-                    "name": "CorAlert Management Console",
-                    "description": [
-                      "Development of a cloud application which complements the company's device."
-                    ],
-                    "features": [
-                      "Track the status of devices.",
-                      "Deploy and create device configuration profiles",
-                      "Deploy software versions to devices.",
-                      "View device logs (both historical and real time).",
-                      "View device generated data."
-                    ]
-                  }
-                ]
-              }
+                "AngularJS",
+                "RequireJS",
+                "Gulp",
+                "HTML/5",
+                "SASS/CSS/3",
+                "Node.js"
+              ]
             },
             {
-              "title": "Software Engineer",
-              "company": "CodeValue",
-              "startDate": "March 2016",
-              "endDate": "July 2017",
+              "title": "Senior Software Engineer",
+              "company": "Rokk3rlabs Inc, http://www.rokk3rlabs.com",
+              "startDate": "Oct 2015",
+              "endDate": "Present",
               "description": [
-                "Developing Software Systems and API's, as specified by client stakeholders."
+                "co-building startup and tech companies"
               ],
               "techStack": [
-                "C#",
-                ".NET",
+                "Javascript",
+                "AngularJS",
+                "Angular",
+                "SASS",
+                "Node.js",
                 "MongoDB",
-                "WPF",
-                "ReactiveX",
-                "XUnit"
+                "PostgreSQL",
+                "MySQL",
+                "Docker",
+                "AWS"
+              ]
+            },
+            {
+              "title": "Lead Product Enginner",
+              "company": "Rokk3r Inc, https://www.rokk3r.com/",
+              "startDate": "Nov 2017",
+              "endDate": "Present",
+              "description": [
+                "Lead software development teams for startup and tech companies."
+              ],
+              "techStack": [
+                "Angular",
+                "SASS",
+                "Node.js",
+                "MongoDB",
+                "Docker",
+                "AWS",
+                "BITBUCKET",
+                "JIRA",
+                "SCRUM",
+                "ASANA"
               ]
             }
           ]
@@ -197,76 +233,50 @@
     ],
     [
       [
-        "experience",
-        {
-          "items": [
-            {
-              "title": "Teaching Assistant",
-              "company": "CodeValue",
-              "startDate": "June 2016",
-              "endDate": "July 2017",
-              "description": [
-                [
-                  "Training entry level employees, as part of an introductory .NET course.",
-                  "Screening candidates by evaluation of assignments",
-                  "Conducting hands-on coding sessions.",
-                  "Evaluating and reviewing solutions of lab assignments."
-                ]
-              ],
-              "techStack": [
-                "C#",
-                ".NET"
-              ]
-            },
-            {
-              "title": "Software Engineer",
-              "company": "Zeiss",
-              "startDate": "February 2013",
-              "endDate": "March 2016",
-              "description": [
-                "Development of in-house and client facing Software Systems.",
-                "Part Time Position."
-              ],
-              "techStack": [
-                "C#",
-                "WPF",
-                ".NET",
-                "Entity Framework"
-              ]
-            }
-          ]
-        }
-      ],
-      [
         "education",
         {
           "label": "Education",
           "items": [
             {
-              "degree": "B.Sc. Software Engineering",
-              "institution": "Ort Braude College",
-              "gpa": 83,
-              "classOf": 2016,
-              "techStack": [
-                "C#",
-                ".NET",
-                "Entity Framework",
-                "Android"
-              ],
+              "degree": "Bachiller Técnico comercial",
+              "institution": "Colegio cooperativo técnico comercial de Funza, Cundinamarca, Colombia",
+              "gpa": 85,
+              "classOf": 2006,
+              "techStack": [],
+              "projects": {
+                "items": []
+              }
+            },
+            {
+              "degree": "Técnico en sistemas",
+              "institution": "ATEC, Mosquera Cundinamarca",
+              "gpa": 85,
+              "classOf": 2009,
+              "techStack": [],
+              "projects": {
+                "items": []
+              }
+            },
+            {
+              "degree": "Programación Desarrollor de software",
+              "institution": "Universidad san buenaventura, Bogotá, Colombia",
+              "gpa": 85,
+              "classOf": 2012,
+              "techStack": [],
               "projects": {
                 "items": [
                   {
-                    "name": "Smart Calendar",
+                    "name": "Hagrid",
                     "description": [
-                      "An Android Application which enhances itinerary management with location awareness."
+                      "Creator of Hagrid, a frontend framework to build user interfaces for web sites, https://github.com/rokk3rlabs/hagrid"
                     ],
                     "features": [
-                      "Leave On Time for next appointment",
-                      "Predict missed appointments",
-                      "Team Itinerary planning and management",
-                      "On site and on time presence assurance"
+                      "Web elements",
+                      "built on sass and html5",
+                      "flexbox support"
                     ]
                   }
+                  
                 ]
               }
             }

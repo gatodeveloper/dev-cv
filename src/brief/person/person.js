@@ -8,6 +8,7 @@ export class Person extends React.Component {
         headshotClassName: 'headshot',
         nameClassName: 'name',
         titleClassName: 'title',
+        infoClassName: 'info',
         mobileClassName: 'mobile',
         skypeClassName: 'skype',
         emailClassName: 'email',
@@ -22,6 +23,7 @@ export class Person extends React.Component {
             value: {
                 name,
                 title,
+                info,
                 residence,
                 mobile,
                 email,
@@ -36,12 +38,13 @@ export class Person extends React.Component {
             className,
             headshotClassName,
             nameClassName,
-            titleClassName,
+            infoClassName,
             mobileClassName,
             skypeClassName,
             emailClassName,
             emailLinkClassName,
             residenceClassName,
+            titleClassName,
         } = this.props;
 
         return (
@@ -49,6 +52,7 @@ export class Person extends React.Component {
                 <img className={headshotClassName} src={headshotSource} alt={headshotAlt}/>
                 <div className={nameClassName}>{name}</div>
                 <div className={titleClassName}>{title}</div>
+                <div className={infoClassName}>{info}</div>
                 <address className={residenceClassName}>{residence}</address>
                 <div className={mobileClassName}>{`${preMobile}${mobile}`}</div>
                 <div className={skypeClassName}>{`${preSkype}${skype}`}</div>
