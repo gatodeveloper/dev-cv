@@ -139,7 +139,7 @@
               "startDate": "Sept 2012",
               "endDate": "2013",
               "description": [
-                "Building the brand in companies for latam and USA."
+                "Building the brand in companies for Latam and USA."
               ],
               "techStack": [
                 "Javascript",
@@ -238,9 +238,9 @@
           "label": "Education",
           "items": [
             {
-              "degree": "Bachiller Técnico comercial",
-              "institution": "Colegio cooperativo técnico comercial de Funza, Cundinamarca, Colombia",
-              "gpa": 85,
+              "degree": "Bachiller Técnico Comercial",
+              "institution": "Colegio Cooperativo Técnico Comercial de Funza, Cundinamarca, Colombia",
+              "gpa": 90,
               "classOf": 2006,
               "techStack": [],
               "projects": {
@@ -248,7 +248,7 @@
               }
             },
             {
-              "degree": "Técnico en sistemas",
+              "degree": "Técnico en Sistemas",
               "institution": "ATEC, Mosquera Cundinamarca",
               "gpa": 85,
               "classOf": 2009,
@@ -258,8 +258,8 @@
               }
             },
             {
-              "degree": "Programación Desarrollor de software",
-              "institution": "Universidad san buenaventura, Bogotá, Colombia",
+              "degree": "Programación Desarrollor de Software",
+              "institution": "Universidad San Buenaventura de Bogotá, Colombia",
               "gpa": 85,
               "classOf": 2012,
               "techStack": [],
@@ -272,7 +272,7 @@
                     ],
                     "features": [
                       "Web elements",
-                      "built on sass and html5",
+                      "built on SASS, js and HTML5",
                       "flexbox support"
                     ]
                   }
