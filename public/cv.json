@@ -94,7 +94,7 @@
                 },
                 {
                   "name": "Python",
-                  "value": "Intermediate"
+                  "value": "Beginner"
                 },
                 {
                   "name": "SCALA",
@@ -153,7 +153,7 @@
               "title": "Senior FE Developer",
               "company": "Monoku, https://monoku.com",
               "startDate": "August 2013",
-              "endDate": "2015",
+              "endDate": "2014",
               "description": [
                 "Building applications for general customers and government entities."
               ],
@@ -168,9 +168,9 @@
               ]
             },
             {
-              "title": "CTO",
+              "title": "Chief Technology Officer",
               "company": "Ubicala, https://ubicala.co",
-              "startDate": "August 2013",
+              "startDate": "August 2014",
               "endDate": "2015",
               "description": [
                 "We made an application and tools for real state brokers."
@@ -226,6 +226,29 @@
                 "SCRUM",
                 "ASANA"
               ]
+            },
+            {
+              "title": "Chief Technology Officer",
+              "company": "Rokk3r Inc, https://pallco.com.mx/",
+              "startDate": "Nov 2018",
+              "endDate": "Present",
+              "description": [
+                "Chief Technology Officer at Pallco, Pallco is a startup in Mexico that manages the activities of the warehouses and warehouse leasing."
+              ],
+              "techStack": [
+                "Angular",
+                "SASS",
+                "Node.js",
+                "MongoDB",
+                "Docker",
+                "Google Cloud",
+                "Microservices",
+                "CI",
+                "BITBUCKET",
+                "JIRA",
+                "SCRUM",
+                "ASANA"
+              ]
             }
           ]
         }
@@ -268,7 +291,7 @@
                   {
                     "name": "Hagrid",
                     "description": [
-                      "Creator of Hagrid, a frontend framework to build user interfaces for web sites, https://github.com/rokk3rlabs/hagrid"
+                      "Creator of Hagrid, a frontend framework to build user interfaces for web sites, https://hagrid-io.github.io"
                     ],
                     "features": [
                       "Web elements",
